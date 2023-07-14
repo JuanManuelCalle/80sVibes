@@ -11,7 +11,7 @@ async function cargarDatos() {
 
     const cantante = document.getElementById('cantante').value;
 
-    const url = `http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${cantante}&api_key=${api_key}&format=json`;
+    const url = `https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${cantante}&api_key=${api_key}&format=json`;
 
     const res = await fetch(url);
     if (res.ok) {
