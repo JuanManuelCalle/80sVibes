@@ -7,6 +7,8 @@ let datos = [];
 async function cargarDatos() {
   try {
 
+    datos = [];
+
     const api_key = "492af8e91386fb7b877521a23d4a9a29";
 
     const cantante = document.getElementById('cantante').value;
